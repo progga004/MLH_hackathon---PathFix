@@ -1,5 +1,5 @@
 # MLH_hackathon
-MLH_HACKATHON_2022
+PATHFIX
 
 ### Inspiration
 
