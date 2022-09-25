@@ -1,0 +1,159 @@
+{% extends "./layout.html" %}
+{% load static %}
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/"/>
+    <link rel="stylesheet" href="{% static 'users/carousel.css' %}"/>
+{% block title %} About | Homefix{% endblock %}
+{% block body %}
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="tile-image"
+                     src="https://www.allprodad.com/wp-content/uploads/2022/02/03-09-22-love-your-neighbor-scaled.jpg" width="1500px" height="700px">
+                <div class="container">
+                    <div class="carousel-caption text-start fw-bold">
+                        <h1>Get help from us to tailor your career path!</h1>
+                        <p>We provide you a free prospective path view by carefully tailoring alignments between your course skillsets and the skillsets required by the corresponding job positions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="tile-image"
+                     src="https://www.forbes.com/advisor/wp-content/uploads/2021/03/free-credit-report-weekly.jpg" width="1500px" height="700px">
+                <div class="container">
+                    <div class="carousel-caption fw-bold">
+                        <h1>Education is absolutely necessary to excel!</h1>
+                        <p>It is a pure hoax to say that the college droppers are the winners. If you make use of college education in a tangible way, you can succeed better in your life!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="tile-image" src="https://i.ytimg.com/vi/RwIxTTvN2yA/maxresdefault.jpg" width="1500px" height="700px">
+                <div class="container">
+                    <div class="carousel-caption text-end fw-bold">
+                        <h1>Now there are no hidden skillsets needed to excel in any job position!</h1>
+                        <p>Get to know more about where you will actually work and what skillsets are needed to work in the most efficient manner by taking your course works in a careful manner!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes -->
+
+    <div class="container marketing">
+        <br><br>
+        <center><h1> A BIT ABOUT PATHFIX DEVELOPERS </h1></center>
+        <br><br>
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row" align="center">
+            <div class="col-sm-2"></div>
+            <div class="col-lg-4">
+                <img class="rounded-circle"
+                     src="https://media-exp1.licdn.com/dms/image/D5635AQFxlz0tmWzC_A/profile-framedphoto-shrink_400_400/0/1660244425057?e=1664697600&v=beta&t=wmlH5oczYg4JOUtNVQwJA0pwbeV3aCvojcGwRvDAAmg"
+                     width="140" height="140" style="pointer-events: none">
+                <h2>Pruthviraj R Patil</h2>
+                <p> Project Manager, Designer, Developer, Tester, Integrator (MSCS, Class of 2022, New York University)</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle"
+                     src="https://media-exp1.licdn.com/dms/image/D4E35AQEbJBvCICLnmw/profile-framedphoto-shrink_800_800/0/1662877918554?e=1664697600&v=beta&t=iI3bjeYKlpgFQWDsNAaH9azruHmdDGCy_0-SxIZLMKY"
+                     width="140" height="140" style="pointer-events: none">
+
+                <h2>Tahsin Nayeem Shrestha</h2>
+                <p>Advisor, Data Collector, (BSCS, Class of 2025, Stony Brook University)</p>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-sm-2"></div>
+            <div class="col-lg-4">
+                <img class="rounded-circle"
+                     src="https://media-exp1.licdn.com/dms/image/C4D03AQFtqAjrTgUkkw/profile-displayphoto-shrink_800_800/0/1648680292633?e=1669852800&v=beta&t=zuksv5A--8jKAVDk9LhgQpkz5V3xwKwAKSLeFsiARwo"
+                     width="140" height="140" style="pointer-events: none">
+
+                <h2>Sabrina Chaite</h2>
+                <p>Advisor, Data Collector, (BSCS, Class of 2025, Stony Brook University)</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded-circle"
+                     src="https://media-exp1.licdn.com/dms/image/D4E35AQHOAlilD4vJ_g/profile-framedphoto-shrink_800_800/0/1658090766448?e=1664697600&v=beta&t=DCIxuX4bCxpebWSIeIl7rFwvvQ6tILWV8vsKip79Rk0"
+                     width="140" height="140" style="pointer-events: none">
+                <h2>Progga Promita</h2>
+                <p>Advisor, Data Collector, (BSCS, Class of 2025, Stony Brook University)</p>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+
+        <!-- START THE FEATURETTES -->
+        <br>
+        <hr class="featurette-divider">
+        <br><br>
+        <div class="row featurette">
+            <div class="col-md-7 ">
+                <h2 class="featurette-heading">The first ever <span class="text-muted">project that is fully student centric!</span>
+                </h2>
+                <p class="lead mx-auto">Our Mission is to help every student who is in search of a perfect set of courses to take in his/her undergraduate degree tenure to achieve their dream jobs. Why to wait then?! Enter your courses and see where you will probably reach NOW!!</p>
+            </div>
+            <div class="col-md-5 align-items-center">
+                <img class="featurette-image img-fluid mx-auto"
+                     src="https://www.stonybrook.edu/commcms/orientation/_images/36481727_2215551745151770_282319448885428224_o.jpg"
+                     width="500" height="500">
+            </div>
+        </div>
+
+        <br><br>
+
+        <hr class="featurette-divider">
+
+        <br><br>
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 ">
+                <h2 class="featurette-heading">Oh for sure, it’s that good. <span
+                        class="text-muted">See for yourself.</span></h2>
+                <p class="lead mx-auto">Our services are completely 100% free for now</p>
+            </div>
+            <div class="col-md-5 order-md-1 align-items-center">
+                <img class="featurette-image img-fluid mx-auto"
+                     src="https://media.istockphoto.com/vectors/free-trial-sign-free-trial-blackgreen-round-ribbon-sticker-vector-id1188373880?k=20&m=1188373880&s=612x612&w=0&h=hBrgDbxwVEtRas8NHNUWFxFIcZ9bOz2IkHlkkKZMffo="
+                     width="500" height="500">
+            </div>
+        </div>
+{#        <hr class="featurette-divider">#}
+        <!-- /END THE FEATURETTES -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; PathFix 2022</div>
+                </div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="">Contact</a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

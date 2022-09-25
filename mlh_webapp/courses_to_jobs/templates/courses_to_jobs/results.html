@@ -72,26 +72,33 @@
         </symbol>
     </svg>
 <!DOCTYPE html>
+<br><br><br>
+    <div class="container text-center" style="background-color: lightgray">
+        <h1 class="display-6 fw-bold">Here are your results !!</h1>
+        <h1 class="display-6 ">Make Sure you download them to keep track of your career path! More stuffs to come soon! Hang on!</h1>
 
-<div>
-{% for result in results %}
-{{ result.course }}
-{{ result.jobs }}
-{% endfor %}
+    <p class="fw-bold"> Congratulations! You have achieved/shown interest in achieving these tech/nontech skills: </p>
+		<table>
+            {% for x in coureskillset %}
+            <tr>
+                <td>
+                    {{x}}
+                </td>
+            </tr>
+        </table>
+        {% endfor %}
+	<br>
+	<br><br>
+    <p class="fw-bold"> So, you are closely aligned with these positions potentially: </p>
+		{% for result in results %}
+		{{ result.jobs }}
+		{% endfor %}
+	<br>
+    <br>
+    <button class="btn btn-primary bg-danger btn-lg px-4 gap-3" onclick="window.print()">Print your results!!</button>
+    <br>
+    <br>
 </div>
-{#  Footer #}
-    <footer class="bg-dark py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0 text-white">Copyright &copy; MLH WEBAPP 2022</div>
-                </div>
-                <div class="col-auto">
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
 
  
 {% endblock %}

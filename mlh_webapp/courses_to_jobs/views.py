@@ -18,16 +18,25 @@ def redirectCoursesToJobsView(request):
 	logger = logging.getLogger(__name__)
 	if request.method == 'POST':
 		form = NameForm(request.POST)
+		coureskillset = set()
 		if form.is_valid():
-			courses = form.cleaned_data['current_courses']
-			courses = courses.strip().split(",")
-			fin_list = CoursesTable.objects.filter(course__in = courses)
+			temp = form.cleaned_data['current_courses']
+			temp = temp.split(",")
+			courses = []
+			for c in temp:
+				courses.append(c.strip())
 
-			# curr_tuple = CoursesTable.objects.filter(Q(course = c))[::-1]
-			# 	fin_list.append(curr_tuple)
-			return render(request, "courses_to_jobs/results.html", context={"results": fin_list})
+			fin_list = CoursesTable.objects.filter(course__in = courses)
+			
+			for m in fin_list:
+				coureskillset.add(m.courseskills)
+
+			return render(request, "courses_to_jobs/results.html", context={"results": fin_list, "coureskillset": coureskillset})
 	else:
 		return render(request, "courses_to_jobs/SearchPath.html")
+
+def redirectAboutPage(request):
+	return render(request, "courses_to_jobs/aboutPage.html")
 
 def predictJobs(request):
 	courseSelected = [request.post.get('course')]
