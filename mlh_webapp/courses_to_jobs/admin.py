@@ -1,3 +1,4 @@
 from django.contrib import admin
+from courses_to_jobs.models import CoursesTable
 
-# Register your models here.
+admin.site.register(CoursesTable)
